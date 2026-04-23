@@ -47,18 +47,16 @@ def build_message(shift: dict) -> str:
     date_str = shift["date"].strftime("%A, %B %d, %Y")
     members_list = [m.strip() for m in shift["members"].split(",")]
     members_formatted = "\n".join(f"  • {m}" for m in members_list)
-
     return (
-	f"☕ *ដល់ម៉ោងលាងម៉ាស៊ីនកាហ្វេហើយបងៗ* ☕\n\n"
+        f"☕ *ដល់ម៉ោងលាងម៉ាស៊ីនកាហ្វេហើយបងៗ* ☕\n\n"
         f"☕ *Coffee Machine Cleaning Reminder* ☕\n\n"
         f"📅 *Date:* {date_str}\n"
         f"👥 *Team:* {shift['team']}\n\n"
-		f"🧹 *អ្នកលាង:*\n{members_formatted}\n\n"
+        f"🧹 *អ្នកលាង:*\n{members_formatted}\n\n"
         f"🧹 *Assigned Members:*\n{members_formatted}\n\n"
-	f"⏰ សូមជួយលាងម៉ាស៊ីនកាហ្វេផងណា! 🙏"
+        f"⏰ សូមជួយលាងម៉ាស៊ីនកាហ្វេផងណា\\! 🙏\n"
         f"⏰ Please remember to clean the coffee today\\. Thank you\\! 🙏"
     )
-
 
 async def send_reminder():
     logger.info("Checking schedule for today...")
