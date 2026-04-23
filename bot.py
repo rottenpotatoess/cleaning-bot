@@ -53,8 +53,9 @@ def build_message(shift: dict) -> str:
         f"☕ *Coffee Machine Cleaning Reminder* ☕\n\n"
         f"📅 *Date:* {date_str}\n"
         f"👥 *Team:* {shift['team']}\n\n"
+		f"🧹 *អ្នកលាង:*\n{members_formatted}\n\n"
         f"🧹 *Assigned Members:*\n{members_formatted}\n\n"
-	f"⏰ សូមជួយលាងម៉ាស៊ីងផងណា! 🙏"
+	f"⏰ សូមជួយលាងម៉ាស៊ីនកាហ្វេផងណា! 🙏"
         f"⏰ Please remember to clean the coffee today\\. Thank you\\! 🙏"
     )
 
