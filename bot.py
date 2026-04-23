@@ -126,7 +126,7 @@ async def main():
         send_reminder,
         trigger="cron",
         hour=16,
-        minute=48,
+        minute=30,
         id="daily_reminder",
         name="Coffee Cleaning Reminder",
         replace_existing=True,
