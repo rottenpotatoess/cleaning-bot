@@ -17,8 +17,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-TELEGRAM_BOT_TOKEN = os.environ["8617904718:AAHNU7MJORWoSOKVMBosvhxt6A_e9JbBOiI"]
-TELEGRAM_GROUP_ID = os.environ["-5119628262"]
+TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+TELEGRAM_GROUP_ID = os.environ["TELEGRAM_GROUP_ID"]
 EXCEL_FILE = os.environ.get("EXCEL_FILE", "Coffee_Cleaning_Schedule_2026.xlsx")
 CAMBODIA_TZ = pytz.timezone("Asia/Phnom_Penh")
 
